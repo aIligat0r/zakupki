@@ -1,0 +1,4 @@
+fake_headers==1.0.2
+pandas
+pyTelegramBotAPI==4.10.0
+requests==2.28.1

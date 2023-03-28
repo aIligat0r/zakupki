@@ -1,0 +1,3 @@
+TG_BOT_TOKEN = ''
+TG_CHAT_ID = 0
+SLEEP_TIME = 20 * 60
