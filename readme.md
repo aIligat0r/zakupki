@@ -47,7 +47,7 @@ $ docker build -t zakipki_monitoring --build-arg TG_BOT_TOKEN='<token>' TG_CHAT_
 $ docker run zakipki_monitoring
 ```
 
-###### Пример сообщения в Телеграм о найденном закупке по ключевым словам:
+###### Пример сообщения в Телеграм о найденной закупке по ключевым словам:
 ![sample.PNG](sample.PNG)
 
 ### _**Удачи!**_
