@@ -14,7 +14,7 @@ class Monitor:
         self.db_connect = sqlite3.connect("zakupki.db")
         self.db_cursor = self.db_connect.cursor()
         self.db_cursor.execute(
-        """
+            """
         CREATE TABLE IF NOT EXISTS zakupki (
             name TEXT,
             link TEXT
@@ -24,9 +24,10 @@ class Monitor:
 
     def _db_check(self, link: str):
         self.db_cursor.execute(
-        """
+            """
         SELECT name FROM zakupki WHERE link=?;
-        """, [link]
+        """,
+            [link],
         )
         if self.db_cursor.fetchone():
             return True  # if exists
@@ -34,9 +35,10 @@ class Monitor:
 
     def _db_write(self, name: str, link: str):
         self.db_cursor.execute(
-        """
+            """
         INSERT INTO zakupki VALUES (?, ?)
-        """, [name, link]
+        """,
+            [name, link],
         )
         self.db_connect.commit()
 
