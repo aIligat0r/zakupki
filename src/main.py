@@ -4,8 +4,7 @@ import config
 from tg import tg_send_message
 from monitor import Monitor
 
-from src import logger
-
+from src.logger import logger
 
 
 def monitor():
@@ -31,7 +30,7 @@ def monitor():
     for zakupka in results["mos"]:
         tg_message = f"""
 <b>rule:</b> <code>{zakupka["product_category"]}</code>
-<b>keyword</b> <code>{zakupka["search_keyword"]}</code>
+<b>keyword:</b> <code>{zakupka["search_keyword"]}</code>
 
 <b>статус:</b> <code>{zakupka["status"]}</code>
 
@@ -54,4 +53,4 @@ if __name__ == "__main__":
         logger.info("start monitoring")
         monitor()
         logger.info("sleeping: %s minutes" % config.SLEEP_TIME)
-        time.sleep(config.SLEEP_TIME)
+        time.sleep(config.SLEEP_TIME * 60)

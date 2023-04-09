@@ -1,38 +1,10 @@
 [
   {
-    "product_category": "SSD",
-    "keywords": ["ssd"]
+    "product_category": "Жёсткие диски",
+    "keywords": ["hdd"]
   },
   {
-    "product_category": "HHD",
-    "keywords": ["hhd"]
-  },
-  {
-    "product_category": "флеш-память",
-    "keywords": ["флеш", "флешка", "flash"]
-  },
-  {
-    "product_category": "накопитель",
-    "keywords": ["накопитель"]
-  },
-  {
-    "product_category": "оперативная память",
-    "keywords": ["оперативная память"]
-  },
-  {
-    "product_category": "видеокарта",
-    "keywords": ["видеокарта"]
-  },
-  {
-    "product_category": "процессор",
-    "keywords": ["процессор"]
-  },
-  {
-    "product_category": "модем",
-    "keywords": ["модем"]
-  },
-  {
-    "product_category": "картридж",
-    "keywords": ["картридж"]
+    "product_category": "Видеокарты",
+    "keywords": ["Видеокарты"]
   }
 ]
